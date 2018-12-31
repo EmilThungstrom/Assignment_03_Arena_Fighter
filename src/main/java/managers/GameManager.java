@@ -47,14 +47,14 @@ public class GameManager {
     private void newHero(){
 
         battleHistory = new ArrayList<List<String>>();
+        System.out.println("Enter the hero's name");
+        String tempN = scanner.nextLine();
         System.out.println("Enter the health value for your hero");
         int tempH = Integer.valueOf(scanner.nextLine());
         System.out.println("Enter the attack value for your hero");
         int tempA = Integer.valueOf(scanner.nextLine());
         System.out.println("Enter the defence value for your hero");
         int tempD = Integer.valueOf(scanner.nextLine());
-        System.out.println("Enter the hero's name");
-        String tempN = scanner.nextLine();
 
         hero = new Hero(tempH, tempA, tempD, tempN);
     }
