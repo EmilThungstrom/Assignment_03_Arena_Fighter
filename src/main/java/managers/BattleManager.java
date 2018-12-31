@@ -44,14 +44,14 @@ public class BattleManager {
 
     private void attack(Person attacker, Person defender){
 
-        int tempA = random.nextInt(10);
-        int tempD = random.nextInt(10);
+        int tempA = random.nextInt(5) + 1;
+        int tempD = random.nextInt(5) + 1;
 
         fightEvents.add
                 ("Attacker attacks for " + Integer.valueOf(attacker.attack) + " + " + Integer.valueOf(tempA) +
                 " Defender tries to avoid for " + Integer.valueOf(defender.defence) + " + " + Integer.valueOf(tempD));
 
-        if(attacker.attack + random.nextInt() % 10 > defender.defence + random.nextInt() % 10){
+        if(attacker.attack + tempA > defender.defence + tempD){
             defender.health--;
             fightEvents.add("Attacker hits!");
         }
