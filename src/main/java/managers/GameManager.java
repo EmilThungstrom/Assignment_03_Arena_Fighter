@@ -59,7 +59,7 @@ public class GameManager {
         hero = new Hero(tempH, tempA, tempD, tempN);
     }
     private void fight() {
-        boolean result = battleManager.fight(randomManager.random, hero);
+        boolean result = battleManager.fight(randomManager, hero);
         battleHistory.add(battleManager.fightEvents);
         printFight();
 

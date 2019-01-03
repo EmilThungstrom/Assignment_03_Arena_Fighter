@@ -5,14 +5,13 @@ import data.Person;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class BattleManager {
 
-    private Random random;
+    private RandomManager random;
     public List<String> fightEvents;
 
-    public boolean fight(Random random, Hero hero){
+    public boolean fight(RandomManager random, Hero hero){
 
         this.random = random;
         fightEvents = new ArrayList<String>();

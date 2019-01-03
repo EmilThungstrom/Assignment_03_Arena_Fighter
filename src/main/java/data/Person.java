@@ -1,6 +1,6 @@
 package data;
 
-import java.util.Random;
+import managers.RandomManager;
 
 public class Person {
 
@@ -13,10 +13,10 @@ public class Person {
         this.attack = attack;
         this.defence = defence;
     }
-    public Person(Random random){
-        this.health = random.nextInt(10) + 1;
-        this.attack = random.nextInt(10) + 1;
-        this.defence = random.nextInt(10) + 1;
+    public Person(RandomManager random){
+        this.health = random.nextInt(6) + 1;
+        this.attack = random.nextInt(6) + 1;
+        this.defence = random.nextInt(6) + 1;
     }
 
 }
