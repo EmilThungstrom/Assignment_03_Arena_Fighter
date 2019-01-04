@@ -18,5 +18,4 @@ public class Person {
         this.attack = random.nextInt(6) + 1;
         this.defence = random.nextInt(6) + 1;
     }
-
 }

@@ -2,6 +2,10 @@ package managers;
 
 import java.util.Random;
 
+
+/**
+ * Wrapper for the Java Util Random class
+ */
 public class RandomManager {
 
     private Random random;

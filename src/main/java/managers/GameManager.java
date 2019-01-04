@@ -6,6 +6,9 @@ import java.util.Scanner;
 
 import data.Hero;
 
+/**
+ * Main game class, contains the game loop.
+ */
 public class GameManager {
 
     private static RandomManager randomManager = new RandomManager();
